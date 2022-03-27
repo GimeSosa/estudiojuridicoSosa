@@ -90,10 +90,10 @@ footer{
 
 
 main{
-	background-image: url(../imagenes/mujer.jpg);
+/*	background-image: url(../imagenes/mujer.jpg);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: cover;*/
 	padding: 100px;
 	margin: auto;
 
@@ -380,6 +380,29 @@ footer{
 }
 
 
+/* animation header */
+
+	#mainfondo{
+	height: 80vh;
+	background-image: url(../img/balanza.jpg);
+	animation-name: animateSection;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+	animation-delay: 1s;
+	animation-timing-function: ease;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+	
+
+@keyframes animateSection{
+	0%{background-image: url(../imgparaanimacion/mujer.png)}
+	25%{background-image: url(../imgparaanimacion/estatua.png)}
+	50%{background-image: url(../imgparaanimacion/balanzaclara.png)}
+	75%{background-image: url(../imgparaanimacion/mujer.png)}
+	100%{background-image: url(../imgparaanimacion/estatua.jpg);}
+}
 
 
 
