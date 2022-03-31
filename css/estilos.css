@@ -15,27 +15,9 @@ body	{
 
 }
 
-nav ul {
-	display: inline-block;
-
-	}
-
-nav ul li{
-
-	list-style: none;
-	display: inline-block;
-	margin: 5px;
-
-	
-}
-
 a{
 	color: black;
 	text-decoration: none;
-}
-
-a: hover{
-	text-decoration: overline;
 }
 
 
@@ -46,11 +28,6 @@ h1{
 }
 
 
-nav {
-
-	text-align:right;
-
-}
 
 h2{
 	font-weight: 500;
@@ -72,28 +49,20 @@ p{
 
 }
 
-section figure {
-	display: inline-block;
-	list-style: none;
-padding: 30px;
-} 
-
 
 
 footer{
 	background-color: black;
 	color: white;
-	/*padding-left: 200px;
-	padding-right: 200px;*/
 	padding: 30px;
 }
 
 
 main{
-/*	background-image: url(../imagenes/mujer.jpg);
+background-image: url(../imagenes/mujer.jpg);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	background-size: cover;*/
+	background-size: cover;
 	padding: 100px;
 	margin: auto;
 
@@ -104,14 +73,6 @@ main{
 
 footer img{
 	width: 50px;
-
-}
-
-section ul li, a{
-		text-decoration: underline;
-		display: inline-block;
-		text-align: right;
-		
 
 }
 
@@ -130,8 +91,6 @@ padding: 50px;
 
 }
 
-
-/*estilo de areas de practica, familia y sucesiones, imagen de profesionales y form de contacto*/
 
 
 #areadefamilia{
@@ -158,166 +117,14 @@ iframe{
 	width:  180px;
 }
 
-/*Aplico grid*/
-
-.mainDiv {
-	width:99%;
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-auto-rows: auto;
-	grid-template-areas: "header" 
-	"nav" 
-	"main" "section-de-practica" "section-profesionales""aside""footer" ;
-	display: flex;
-	flex-direction: column;
-	
-
-}
-
-#header{
-	grid-area: header;
-}
-
-#nav{
-	grid-area: nav;
-}
-
-#main{
-	grid-area: main;
-}
-
-
-
-#section-de-practica{
-	grid-area: section-de-practica;
-}
-
-
-
-#aside{
-	grid-area: aside;
-}
-
-
-#footer{
-	grid-area: footer;
-}
-
-
-
-#section-de-practica {
-	display: flex;
-	flex-wrap: wrap;	 
-	flex-direction: row;
-	justify-content: space-around;
-	
-}
-
-
-
-
-#aside ul {
-	display: flex;
-	flex-wrap: nowrap;
-	justify-content: center;
-	padding: 30px;
-	margin: auto;
-}
-
-
-/*.sectionProfesionales ul {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-}
-  */
-
-/*.sectionProfesionales ul li a h3{
-	padding: 50px;
-
-}*/
-
-/*aplico grid en el htmml de "profesionales"*/
-
-.mainDivProfesionales{
-	width: 99%;
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: auto;
-	grid-template-areas: "header" "nav" "sectionDescripcionProf" "footer";
-	display: flex;
-	flex-direction: column;
-
-
- }
-
-
-
- #header{
- 	grid-area: header;
- }
-
- #nav{
- 	grid-area: nav;
- }
-
-#section{
-	grid-area: sectionDescripcionProf;
-}
-
-#footer{
-	grid-area: footer;
-}
-
-
-.abogadas{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-}
- 
-/* media queries*/
-
-/*vista mobile del index*/
-
-@media only screen and (max-width: 600px) {
-	.mainDiv{
-
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-auto-rows: auto;
-		grid-template-areas: "header" "nav" "section-de-practica" "section-profesionales" "footer";
-		
-
-	}
-
-	aside, main {
-		display: none;
-	}
-
-
-	#nav {
-		display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
-	}
-
-	/* #sectionProfesionales  li {
-
-
-	 	text-align: center;
-	 	list-style-type: none;
-
-
-	}*/
 
 	footer{
 		text-align: center;
 	}
 
-/*vista mobile del html"profesionales" */
+/*/*vista mobile del html"profesionales" */
 
-.mainDivProfesionales{
+/*.mainDivProfesionales{
 
 		display: grid;
 		grid-template-columns: 1fr;
@@ -328,14 +135,14 @@ iframe{
 
 	}
 
-#nav {
+ .nav {
 		display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
 	}
 
 
-	.abogadas{
+	/*.abogadas{
 	display: flex;
 		flex-direction: column;
 		text-align: justify;
@@ -346,11 +153,11 @@ iframe{
  	text-align: left;
  }
 
-}
+}*
 
 /*vista desktop del html "index"  y "profesionales" */
 
-@media only screen and (min-width: 1024px) {
+/*@media only screen and (min-width: 1024px) {
 	.mainDiv{ 
 	width:99%;
 	display: grid;
@@ -363,8 +170,8 @@ iframe{
 	flex-direction: column;
 	
 	}
-
-/* #sectionProfesionales ul {
+*/
+ /*#sectionProfesionales ul {
 
 		display: flex;
 	flex-direction: column;
@@ -377,12 +184,12 @@ iframe{
 footer{
 	text-align: center;
 }
-}
 
 
-/* animation header */
 
-	#mainfondo{
+//** animation header */
+
+	/*#mainfondo{
 	height: 80vh;
 	background-image: url(../img/balanza.jpg);
 	animation-name: animateSection;
@@ -403,7 +210,21 @@ footer{
 	75%{background-image: url(../imgparaanimacion/mujer.png)}
 	100%{background-image: url(../imgparaanimacion/estatua.jpg);}
 }
+/**/
 
 
 
+.bg-black{
+	background-color: black;
+
+}
+
+#nav{
+	background-color: black;
+
+}
+
+a:link {text-decoration: none }
+a:visited {color: black; text-decoration: none }
+a:hover { color: black;  text-decoration: none }
 
