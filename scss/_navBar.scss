@@ -1,0 +1,11 @@
+nav ul {
+	display: inline-block;
+	list-style: none;
+	display: inline-block;
+	margin: 5px;
+		&:link {text-decoration: none }
+		&:visited { text-decoration: none }
+		&:hover { text-decoration: none } 
+	}
+
+

@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500&display=swap");
+#section-de-practica {
+  padding: 30px; }
+  #section-de-practica article a {
+    text-decoration: none; }
+
+.colorBlack {
+  color: black; }
+
+#footer {
+  background-color: black;
+  color: white;
+  padding: 30px;
+  text-align: center; }
+  #footer img {
+    width: 50px; }
+
+nav ul {
+  display: inline-block;
+  list-style: none;
+  display: inline-block;
+  margin: 5px; }
+  nav ul:link {
+    text-decoration: none; }
+  nav ul:visited {
+    text-decoration: none; }
+  nav ul:hover {
+    text-decoration: none; }
+
+main {
+  background-image: url(../imagenes/mujer.jpg);
+  font-family: fontMain;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px;
+  margin: auto; }
+  main h2 {
+    font-weight: 500;
+    font-size: 1.6rem;
+    text-align: center; }
+
+aside .parrafoNovedades {
+  text-align: justify;
+  padding: 10px; }
+
+aside .titNovedades {
+  padding: 50px; }
+
+aside #novedades {
+  text-align: center;
+  padding: 30px; }
